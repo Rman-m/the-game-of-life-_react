@@ -1,8 +1,15 @@
-.cells-container{
-    width: 550px;
-    height:550px;
-    border:1px #777 solid;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 1px;
+.container{
+    width: 100vw;
+    height: 100vh;
+    display:grid;
+    place-items: center;
+    & .cells-container{
+        width: 550px;
+        height:550px;
+        border:1px #777 solid;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1px;
+    }
+
 }
