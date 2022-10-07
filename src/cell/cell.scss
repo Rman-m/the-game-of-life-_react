@@ -1,0 +1,10 @@
+.single-cell  {
+    width: 10px;
+    height: 10px;
+    aspect-ratio: 1/1; 
+    border:.1px red solid;
+    font-size: .6rem;
+}
+.alive {
+    background-color: green;
+}
