@@ -51,18 +51,11 @@ function App() {
 		setCells(squares);
 	}, [setCells])
 
-	useLayoutEffect(() => {
+	useEffect(() => {
 		createCelles();
 		console.log("hi")
 	}, [createCelles]);
 
-
-	useEffect(() => {
-		if(!firstRun ){
-			firstRun = true
-			return
-		}
-		console.log(cells)
 		setTimeout(function () {
 			
 			const alives = cells.filter((cell,) => cell.isAlive === true);
@@ -103,9 +96,6 @@ function App() {
 		   setCells(newCells)
 		}, 1000);
 
-	}, [cells]);
-
-	if (cells === undefined) return;
 	return (
 		<div className="cells-container">
 			{cells.map(({ isAlive, id  }) => (
