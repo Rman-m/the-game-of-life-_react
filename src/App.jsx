@@ -57,9 +57,7 @@ function App() {
 	}, [createCelles]);
 
 		setTimeout(function () {
-			
 			const alives = cells.filter((cell,) => cell.isAlive === true);
-
 			const newCells = cells.map((cell) => {
 				let aliveCounter = 0;
 				let cordinates = [];
